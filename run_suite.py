@@ -21,7 +21,7 @@ def runtest():
     suite.addTest(unittest.makeSuite(TestIHRMEMP))
 
 
-    report_path = "{}/report/test_{}.html".format(PRO_PATH,time.strftime("%Y%m%d%H%M%S"))
+    report_path = "{}/report/test_emp.html".format(PRO_PATH))
 
     with open(report_path,"wb") as f:
         runner = HTMLTestRunner(f, title="测试报告")
