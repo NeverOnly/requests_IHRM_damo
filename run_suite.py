@@ -21,21 +21,21 @@ suite.addTest(TestIHRM("test_success_login"))
 suite.addTest(unittest.makeSuite(TestIHRMEMP))
 
 
-report_path = "{}/report/test_emp.html".format(PRO_PATH))
+report_path = "{}/report/test_emp.html".format(PRO_PATH)
 
 with open(report_path,"wb") as f:
-    runner = HTMLTestRunner(f, title="测试报告")
-    runner.run(suite)
+        runner = HTMLTestRunner(f, title="测试报告")
+        runner.run(suite)
     # runner = unittest.TextTestRunner()
     # runner.run(suite)
 
 # btn = tkinter.Button(top,text = "执行测试用例",command = runtest).place(x=105,y=70)
 
 
-# # 将按钮放置在窗口中
-# # btn.pack()
+# 将按钮放置在窗口中
+# btn.pack()
 
-# # 进入消息循环
+# 进入消息循环
 # top.mainloop()
 
 
